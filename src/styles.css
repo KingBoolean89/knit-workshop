@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box; 
+  }
+/* Header section*/
+  nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+    background-color: black;
+    color: aliceblue;
+    font-size: 1.6em;
+    height: 50px;
+    justify-content: space-around;
+  }
+.menu-items  a{
+      width:10%;
+      align-self: center;
+      margin:10px;
+    
+      
+  }
+  .menu-items input{
+      height: 80%;
+      align-self: center;
+      
+  }
+  /*Slider Section*/
+  .slider,
+.wrap,
+.slide-content{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.wrap{
+    position: relative;
+}
+.slide{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.slide1{
+    background-image: url(./images/yarn1.jpg);
+}
+.slide2{
+    background-image: url(./images/yarn2.jpg);
+}
+.slide3{
+    background-image: url(./images/yarn3.jpg);
+}
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.slide-content span{
+    font-size: 4rem;
+    color: floralwhite;
+}
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+
+}
+#arrow-left{
+    border-width: 30px 40px 30px 0;
+    border-color:transparent  floralwhite transparent transparent ;
+    margin-left:30px;
+    left:0;
+
+}
+#arrow-right{
+    border-width: 30px 0 30px 40px;
+    border-color:transparent transparent transparent  floralwhite;
+    margin-right:30px;
+    right:0;
+}
+/*Items Section*/
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    align-self: center;
+    border-radius: 5px;
+
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container {
+    padding: 2px 16px;
+
+  }
+  .items{
+     margin-top:30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-around; 
+
+
+  }
+  .card img{
+    max-width: 100%;
+    align-self: center;
+    border-radius: 5px 5px 0 0;
+  }
+  .categories{
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    
+  }
+  .box {
+     width: 100%;
+    color: #000;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.2em;
+  }
+  
+  .box:nth-child(even) {
+    color: #000;
+  }
+  
+  .box img{
+    max-width: 100%;
+    align-self: center;
+    border-radius: 5px 5px 0 0;
+  }
+  
